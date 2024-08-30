@@ -56,7 +56,7 @@ Ensure that you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone git@github.com:yourusername/rnTestTask.git
+   git@github.com:abrahamyanhrant93/rnTestTask.git
    cd rnTestTask
    ```
 
@@ -91,38 +91,6 @@ Ensure that you have the following installed:
 - **`yarn build:apk`** - Builds the Android APK for release.
 - **`yarn build:aab`** - Builds the Android App Bundle (AAB) for release.
 - **`yarn lint`** - Lints the project files using ESLint.
-
-## Build Instructions
-
-### Android
-
-To build the Android APK:
-
-```bash
-yarn build:apk
-```
-
-To build the Android App Bundle (AAB):
-
-```bash
-yarn build:aab
-```
-
-### iOS
-
-To build the iOS app (on macOS):
-
-1. **Install CocoaPods dependencies:**
-
-   ```bash
-   yarn pod
-   ```
-
-2. **Build the app:**
-
-   ```bash
-   yarn ios --configuration Release
-   ```
 
 ## Technologies Used
 
