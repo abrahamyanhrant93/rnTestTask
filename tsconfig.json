@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "Bundler",
+    "module": "esnext",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "useUnknownInCatchVariables": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@utils": ["./src/common/utils"],
+      "@assets": ["./src/assets"],
+      "@images": ["./src/assets/images/*"],
+      "@typings": ["./src/common/typings"],
+      "@hooks": ["./src/common/hooks"],
+      "@constants": ["./src/constants"],
+      "@services": ["./src/services"],
+      "@ui-kit": ["./src/ui-kit"],
+      "@ui-kit/*": ["./src/ui-kit/*"],
+      "@ui-modules": ["./src/ui-modules"],
+      "@ui-modules/*": ["./src/ui-modules/*"],
+      "@navigators": ["./src/app/navigators/*"],
+      "@screens": ["./src/app/screens"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "include": [
+    "src/**/*",
+    "declarations/*.d.ts",
+    "app.config.js",
+    "configs/jest/jest-setup.config.js",
+    "polifills"
+  ],
+  "extends": "@react-native/typescript-config/tsconfig.json"
+}
